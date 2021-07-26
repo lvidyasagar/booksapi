@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "projects": {
+    "booksapi": {
+      "root": "apps/booksapi",
+      "sourceRoot": "apps/booksapi/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/booksapi",
+            "main": "apps/booksapi/src/main.ts",
+            "tsConfig": "apps/booksapi/tsconfig.app.json",
+            "assets": ["apps/booksapi/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/booksapi/src/environments/environment.ts",
+                  "with": "apps/booksapi/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "booksapi:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/booksapi/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/booksapi"],
+          "options": {
+            "jestConfig": "apps/booksapi/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/express"
+  },
+  "defaultProject": "booksapi"
+}
