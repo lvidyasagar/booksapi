@@ -2,7 +2,6 @@ import * as mongoose from 'mongoose';
 import { ReviewSchema, IReview } from './review.model';
 import { PublisherSchema, IPublisher } from './publisher.model';
 import { autoIncrementModelID } from '../utilities/counterModel';
-import { transform } from 'typescript';
 
 interface IBook {
   book: {
