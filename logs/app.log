@@ -1,93 +1,16 @@
-[2021-08-05T00:03:20.606] [INFO] default - 94eac0d8-84a6-43f5-a58e-a9947145c0f7: POST /books 
-[2021-08-05T00:03:20.607] [ERROR] default - 94eac0d8-84a6-43f5-a58e-a9947145c0f7: POST /books throws 400 -Bad Request : with message - Request Body data should not be empty 
-[2021-08-05T00:03:31.930] [INFO] default - ab825a1b-65a1-4b50-a3c5-8c729ca67cbf: POST /books 
-[2021-08-05T00:08:31.466] [INFO] default - 7462e0f9-cb6c-45f4-a822-425c9ecb23cd: POST /books 
-[2021-08-05T00:16:14.742] [INFO] default - 2b6dea92-adca-4f3f-905c-3b7902021714: POST /books 
-[2021-08-05T00:16:22.457] [INFO] default - 9ce6217f-ea75-4f95-9215-28be6ebed0a4: GET /books 
-[2021-08-05T00:17:31.034] [INFO] default - ef7c0d9e-ebce-44d3-b85e-aa40bcbd5e50: GET /books/B10001 
-[2021-08-05T00:17:37.123] [INFO] default - b47b528b-7df2-4433-839a-25c92c751ba5: GET /books/B10002 
-[2021-08-05T00:17:52.575] [INFO] default - 57ac8c57-6676-4c4e-9362-1c563f8f6cd5: GET /books/B10003 
-[2021-08-05T00:17:57.119] [INFO] default - aa9f0bd7-fcf6-4571-8db4-38387e2d99f2: GET /books/B10004 
-[2021-08-05T00:17:57.484] [ERROR] default - aa9f0bd7-fcf6-4571-8db4-38387e2d99f2: GET /books/B10004 throws 404 -Not Found : with message - Book details not found with book Id B10004. 
-[2021-08-05T00:18:37.107] [INFO] default - db651cc2-fdae-46cf-922a-89adcd9f5a4a: POST /books/B10004 
-[2021-08-05T00:18:37.107] [ERROR] default - db651cc2-fdae-46cf-922a-89adcd9f5a4a: POST /books/B10004 throws 404 -Not found : with message - URI path not found 
-[2021-08-05T00:18:54.039] [INFO] default - e2db8e86-d8b6-4348-aa4f-243c27732fff: GET /books/B10003 
-[2021-08-05T00:19:20.709] [INFO] default - dd82a54a-6300-49f0-8751-5f237b933d0b: PUT /books/B10001 
-[2021-08-05T00:19:20.938] [ERROR] default - dd82a54a-6300-49f0-8751-5f237b933d0b: PUT /books/B10001 throws 400 -System Error : with message - document must have an _id before saving 
-[2021-08-05T00:20:35.437] [ERROR] default - 9f22de63-2001-4dec-8ef3-02caa716f616: GET /books/B10001 throws 400 -entity.parse.failed : with message - Unexpected token } in JSON at position 436 
-[2021-08-05T00:20:56.523] [ERROR] default - 94dd0870-99c1-435f-ad4f-b3d397330c2a: GET /books/B10001 throws 400 -entity.parse.failed : with message - Unexpected token } in JSON at position 436 
-[2021-08-05T00:21:57.881] [ERROR] default - fbfc84b7-00a5-4e06-bdbd-3bd136a1608b: DELETE /books/B10001 throws 400 -entity.parse.failed : with message - Unexpected token } in JSON at position 436 
-[2021-08-05T00:22:04.534] [INFO] default - 69970a91-2725-4b77-b198-77dfa0f7057d: DELETE /books/B10001 
-[2021-08-05T00:23:42.693] [ERROR] default - 212569a0-806e-4496-a7a7-6d970211a21e: POST /books throws 400 -entity.parse.failed : with message - Unexpected token } in JSON at position 708 
-[2021-08-05T00:24:02.939] [INFO] default - 458eb9d5-7a38-4b8b-a5dd-6f9cee8cd1e7: POST /books 
-[2021-08-05T00:25:12.961] [INFO] default - a0348240-06b7-402a-beda-da24d0e50630: GET /books 
-[2021-08-05T00:27:19.791] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:27:22.313] [INFO] default - Mongo db is connected
-[2021-08-05T00:27:39.034] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:27:42.997] [INFO] default - Mongo db is connected
-[2021-08-05T00:28:58.372] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:29:01.682] [INFO] default - Mongo db is connected
-[2021-08-05T00:29:08.682] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:29:11.402] [INFO] default - Mongo db is connected
-[2021-08-05T00:29:17.040] [INFO] default - 611173e8-6e7f-4842-aec8-79dad9af1bb7: GET /books 
-[2021-08-05T00:29:55.743] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:29:58.326] [INFO] default - Mongo db is connected
-[2021-08-05T00:29:59.822] [INFO] default - 7b75d19a-2e85-4caf-b738-bd6e6b44b25c: GET /books 
-[2021-08-05T00:35:13.576] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:35:16.326] [INFO] default - Mongo db is connected
-[2021-08-05T00:42:22.860] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:42:25.755] [INFO] default - Mongo db is connected
-[2021-08-05T00:42:30.229] [INFO] default - b5e79972-1f9f-4fa9-a639-73fbd77802bf: GET /books 
-[2021-08-05T00:43:01.293] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:43:04.310] [INFO] default - Mongo db is connected
-[2021-08-05T00:43:04.780] [INFO] default - 3699e966-e74a-4bc7-9b68-22f11f217553: GET /books 
-[2021-08-05T00:46:05.130] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:46:07.712] [INFO] default - Mongo db is connected
-[2021-08-05T00:46:14.778] [INFO] default - 1c4c4f28-801a-4dc0-a637-a2338191d7ae: GET /books 
-[2021-08-05T00:47:15.299] [INFO] default - d935ef1b-bee3-44ba-b106-8a548ef6b6c8: DELETE /books/B10004 
-[2021-08-05T00:47:33.678] [INFO] default - 759ee05c-5c9f-4c55-8a24-e7db2ee07646: POST /books 
-[2021-08-05T00:47:40.183] [INFO] default - 7de8e6fc-7637-4ee0-926f-0c74ef96a141: GET /books 
-[2021-08-05T00:48:23.600] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:48:26.261] [INFO] default - Mongo db is connected
-[2021-08-05T00:48:30.542] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:48:35.273] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:48:38.543] [INFO] default - Mongo db is connected
-[2021-08-05T00:48:43.745] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:48:46.350] [INFO] default - Mongo db is connected
-[2021-08-05T00:48:48.013] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:48:50.723] [INFO] default - Mongo db is connected
-[2021-08-05T00:49:25.599] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:49:28.445] [INFO] default - Mongo db is connected
-[2021-08-05T00:49:35.215] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:49:37.723] [INFO] default - Mongo db is connected
-[2021-08-05T00:49:43.718] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:49:46.538] [INFO] default - Mongo db is connected
-[2021-08-05T00:50:08.768] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:50:11.528] [INFO] default - Mongo db is connected
-[2021-08-05T00:50:30.734] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:50:33.434] [INFO] default - Mongo db is connected
-[2021-08-05T00:50:38.021] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:50:40.598] [INFO] default - Mongo db is connected
-[2021-08-05T00:50:42.014] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:50:44.336] [INFO] default - Mongo db is connected
-[2021-08-05T00:50:49.941] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:50:53.307] [INFO] default - Mongo db is connected
-[2021-08-05T00:52:48.514] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:52:51.260] [INFO] default - Mongo db is connected
-[2021-08-05T00:53:47.752] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:53:50.659] [INFO] default - Mongo db is connected
-[2021-08-05T00:54:00.718] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:54:03.463] [INFO] default - Mongo db is connected
-[2021-08-05T00:54:16.200] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:54:19.129] [INFO] default - Mongo db is connected
-[2021-08-05T00:54:28.549] [INFO] default - e18a7e37-62b0-4f3a-b61c-9c4e4011e039: GET /books 
-[2021-08-05T00:55:30.655] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:55:33.579] [INFO] default - Mongo db is connected
-[2021-08-05T00:55:56.656] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:55:59.376] [INFO] default - Mongo db is connected
-[2021-08-05T00:56:16.697] [INFO] default - Server started at http://localhost:3000
-[2021-08-05T00:56:19.549] [INFO] default - Mongo db is connected
-[2021-08-05T00:56:24.602] [INFO] default - e238842e-8432-462f-84b0-ede4b2364a28: GET /books 
-[2021-08-05T01:00:06.854] [INFO] default - 9337424c-4739-4039-8de8-0770cc56b079: POST /books 
-[2021-08-05T01:00:15.991] [INFO] default - b555293e-8fbe-45e5-a61f-22b309612a8e: GET /books 
-[2021-08-05T01:00:30.157] [INFO] default - 4797fb9a-03c9-46a1-a477-62c49484454a: GET /books/B10006 
+[2021-09-21T11:02:47.642] [INFO] default - 709cf134-2e66-4ee5-84d4-880f900ed24e: GET /books 
+[2021-09-21T11:02:47.645] [ERROR] default - 709cf134-2e66-4ee5-84d4-880f900ed24e: GET /books throws 400 -System Error : with message - Jwt is expired 
+[2021-09-21T11:03:36.568] [INFO] default - 4f201821-5ddd-4fbf-b838-175f3c430f4c: GET /books 
+[2021-09-21T11:03:39.924] [INFO] default - Get books Api response sent
+[2021-09-21T11:20:13.587] [INFO] default - 1a47db17-e3a8-4be2-94f1-f44b299f8187: GET /books 
+[2021-09-21T11:20:13.590] [ERROR] default - 1a47db17-e3a8-4be2-94f1-f44b299f8187: GET /books throws 400 -Bad Request : with message - Authorization header Bearer token is missing 
+[2021-09-21T14:11:40.653] [INFO] default - Server started at http://localhost:3000
+[2021-09-21T14:11:43.003] [INFO] default - Mongo db is connected
+[2021-09-21T14:12:59.575] [INFO] default - Server started at http://localhost:3000
+[2021-09-21T14:13:02.497] [INFO] default - Mongo db is connected
+[2021-09-21T14:13:19.349] [INFO] default - Server started at http://localhost:3000
+[2021-09-21T14:13:21.610] [INFO] default - Mongo db is connected
+[2021-09-21T14:15:27.045] [INFO] default - c212851b-d3e2-48e2-9322-a7698c421f8f: GET /books 
+[2021-09-21T14:15:27.047] [ERROR] default - c212851b-d3e2-48e2-9322-a7698c421f8f: GET /books throws 400 -System Error : with message - Jwt is expired 
+[2021-09-21T14:16:05.866] [INFO] default - 1306f784-9f54-4a1d-b5f9-f0d6a7723601: GET /books 
+[2021-09-21T14:16:07.238] [INFO] default - Get books Api response sent

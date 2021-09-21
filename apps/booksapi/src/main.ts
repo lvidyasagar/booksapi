@@ -7,13 +7,44 @@ import { logger } from './app/utilities/loggerHandlers';
 import errorHandler from './app/utilities/errorHandler';
 import HttpException from './app/exceptions/HttpException';
 import { setStartIncrementNumber } from './app/utilities/counterModel';
+import { ExpressOIDC } from '@okta/oidc-middleware';
+import { authHeaderValidator } from './app/utilities/auth.validator';
+import * as session from 'express-session';
 
 const app = express();
+
+const oidc = new ExpressOIDC({
+  issuer: environment.ISSUER,
+  client_id: environment.CLIENT_ID,
+  client_secret: environment.CLIENT_SECRET,
+  appBaseUrl: environment.APP_BASE_URL,
+  scope: environment.SCOPE,
+});
+
+app.set('view engine', 'pug');
+
+app.use(
+  session({
+    secret: 'letmeshare',
+    resave: true,
+    saveUninitialized: false,
+  })
+);
+
+app.use(oidc.router);
+
+app.get('/', (req: any, res) => {
+  if (req.userContext) {
+    res.render('profile', { user: req.userContext });
+  } else {
+    res.render('login');
+  }
+});
 
 app.use('/', (req, res, next) => {
   const transactionId = uuid.v4();
   req.headers['transaction_id'] = transactionId;
-  res.setHeader('Transaction-Id', transactionId);
+  res.setHeader('transaction-Id', transactionId);
   next();
 });
 
@@ -25,7 +56,9 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use('/books', authHeaderValidator);
 app.use(bookRoutes);
+
 
 app.use((req, res, next) => {
   next(new HttpException(404, 'URI path not found', 'Not found'));

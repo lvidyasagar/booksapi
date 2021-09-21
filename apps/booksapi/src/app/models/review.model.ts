@@ -15,7 +15,14 @@ const ReviewSchema = new mongoose.Schema<IReview>(
     reviewer: String,
     message: String,
   },
-  { _id: false }
+  {
+    toJSON: {
+      transform: function (doc, ret) {
+        delete ret._id;
+        delete ret.__v;
+      },
+    },
+  }
 );
 
 ReviewSchema.pre('save', function (next) {

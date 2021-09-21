@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+    head
+        title Books Store Api
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js")
+body
+    div.container.mt-4
+        div.d-flex.justify-content-between
+            div.pb-3 
+                h4.text-primary.ml-3 Hello  #{user.userinfo.given_name}
+            div.pb-3
+                form(action="/logout", method="post")  
+                    button(type="submit").btn.btn-primary Logout 
+        div.col-12.grid-margin.mt-2
+            div.card
+                div.row
+                    div.col-md-9
+                        div.card-body
+                            h6.card-title Copy to Clipboard below Access Token and send it as authorization token to access book API's
+                            input#clipboardExample1.form-control(type='text' value=user.tokens.access_token)
+                            div.mt-3
+                                button.btn.btn-info.btn-clipboard(type='button' data-clipboard-action='copy' data-clipboard-target='#clipboardExample1') Copy
+    script 
+        include copy.js

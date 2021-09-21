@@ -8,7 +8,7 @@ configure({
       type: 'dateFile',
       filename: `${environment.logDir}/${environment.logFile}`,
       layout: { type: 'basic' },
-      compress: true,
+      compress: false,
       daysToKeep: 14,
       keepFileExt: true
     }
