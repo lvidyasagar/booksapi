@@ -10,6 +10,7 @@ import { setStartIncrementNumber } from './app/utilities/counterModel';
 import { ExpressOIDC } from '@okta/oidc-middleware';
 import { authHeaderValidator } from './app/utilities/auth.validator';
 import * as session from 'express-session';
+import { mongoConnect } from './app/utilities/mongoose.connect';
 
 const app = express();
 
@@ -66,27 +67,14 @@ app.use((req, res, next) => {
 
 app.use(errorHandler);
 
-mongoose.connect(environment.mongoUri, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false,
-});
-
-mongoose.connection.on('error', () => {
-  logger.error(`unable to connect to database: ${environment.mongoUri}`);
-});
-
-mongoose.connection.once('open', function () {
-  logger.info('Mongo db is connected');
-  setStartIncrementNumber('book_id', 10000);
-  setStartIncrementNumber('publisher_id', 1000);
-});
-
 const server = app.listen(environment.port, () => {
   logger.info(`Server started at http://localhost:${environment.port}`);
+  mongoConnect();
 });
 
 server.on('error', () => {
   logger.error('Something went wrong. Server is not running');
 });
+
+
+export default server;
