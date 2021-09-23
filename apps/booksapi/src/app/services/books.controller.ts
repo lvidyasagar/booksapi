@@ -215,18 +215,20 @@ const getBookReviewsByReviewId = async (
     const reviewId = parseInt(req.params.review_id);
     logger.debug('Get book review with bookId and reviewId Api invoked');
     const book = await Book.findOne({ 'book.book_id': bookId });
-    const review = book.book.reviews.find(
-      (review) => review.review_id === reviewId
-    );
     if (!book) {
       const message = `Book details not found with book Id ${bookId}.`;
       next(new HttpException(404, message, 'Not Found'));
-    } else if (book && !review) {
-      const message = `Reviews not found with book Id ${bookId} and review Id ${reviewId}.`;
-      next(new HttpException(404, message, 'Not Found'));
-    } else {
-      logger.info('Get book review with bookId and reviewId Api response sent');
-      res.json(review);
+    }else {
+      const review = await book.book.reviews.find(
+        (review) => review.review_id === reviewId
+      );
+      if (book && !review) {
+        const message = `Reviews not found with book Id ${bookId} and review Id ${reviewId}.`;
+        next(new HttpException(404, message, 'Not Found'));
+      }else{
+        logger.info('Get book review with bookId and reviewId Api response sent');
+        res.json(review);
+      }
     }
   } catch (err) {
     next(new HttpException(400, err.message, err.type));
