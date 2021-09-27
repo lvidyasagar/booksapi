@@ -6,6 +6,7 @@
     "nx": "nx",
     "start": "node dist/apps/booksapi/main.js",
     "build": "nx build",
+    "heroku-postbuild": "nx build booksapi --prod",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",

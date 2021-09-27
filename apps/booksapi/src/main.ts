@@ -1,12 +1,10 @@
 import * as express from 'express';
-import * as mongoose from 'mongoose';
 import * as uuid from 'node-uuid';
 import { environment } from './environments/environment';
 import bookRoutes from './app/api-routes/books.route';
 import { logger } from './app/utilities/loggerHandlers';
 import errorHandler from './app/utilities/errorHandler';
 import HttpException from './app/exceptions/HttpException';
-import { setStartIncrementNumber } from './app/utilities/counterModel';
 import { ExpressOIDC } from '@okta/oidc-middleware';
 import { authHeaderValidator } from './app/utilities/auth.validator';
 import * as session from 'express-session';
@@ -35,11 +33,16 @@ app.use(
 app.use(oidc.router);
 
 app.get('/', (req: any, res) => {
-  if (req.userContext) {
-    res.render('profile', { user: req.userContext });
-  } else {
-    res.render('login');
+  if(environment.enableAuthentication){
+    if (req.userContext) {
+      res.render('profile', { user: req.userContext });
+    } else {
+      res.render('login');
+    }
+  }else{
+    res.redirect('/books');
   }
+  
 });
 
 app.use('/', (req, res, next) => {
