@@ -38,7 +38,6 @@ const autoIncrementModelID = function (
   next,
   prefix?,
   isNested?,
-  parent?
 ) {
   counterModel.findByIdAndUpdate(
     modelName,
@@ -47,7 +46,7 @@ const autoIncrementModelID = function (
     function (error, counter) {
       if (error) return next(error);
       if (isNested) {
-        doc[parent][modelName] = prefix ? prefix + counter.seq : counter.seq;
+        doc[modelName] = prefix ? prefix + counter.seq : counter.seq;
       } else {
         doc[modelName] = prefix ? prefix + counter.seq : counter.seq;
       }

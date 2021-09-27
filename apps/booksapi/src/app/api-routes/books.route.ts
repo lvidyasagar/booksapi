@@ -6,31 +6,43 @@ import { bookSchema, reviewSchema, userSchema } from '../utilities/joi.schema';
 
 const router = express.Router();
 
-router
-  .route('/register')
-  .get(UserController.registerUserPage)
-  .post(JoiValidation(userSchema), UserController.registerUser);
+router.get('/register', UserController.registerUserPage);
+router.post(
+  '/register',
+  JoiValidation(userSchema),
+  UserController.registerUser
+);
 
-router
-  .route('/books')
-  .get(BooksController.getBooks)
-  .post(JoiValidation(bookSchema), BooksController.createBook);
+router.get('/books', BooksController.getBooks);
+router.post('/books', JoiValidation(bookSchema), BooksController.createBook);
 
-router
-  .route('/books/:book_id')
-  .get(BooksController.getBookById)
-  .put(JoiValidation(bookSchema), BooksController.updateBookById)
-  .delete(BooksController.deleteBookById);
+router.get('/books/:book_id', BooksController.getBookById);
+router.put(
+  '/books/:book_id',
+  JoiValidation(bookSchema),
+  BooksController.updateBookById
+);
+router.delete('/books/:book_id', BooksController.deleteBookById);
 
-router
-  .route('/books/:book_id/reviews')
-  .get(BooksController.getBookReviewsByBookId)
-  .post(JoiValidation(reviewSchema), BooksController.createBookReviewByBookId);
+router.get('/books/:book_id/reviews', BooksController.getBookReviewsByBookId);
+router.post(
+  '/books/:book_id/reviews',
+  JoiValidation(reviewSchema),
+  BooksController.createBookReviewByBookId
+);
 
-router
-  .route('/books/:book_id/reviews/:review_id')
-  .get(BooksController.getBookReviewsByReviewId)
-  .put(JoiValidation(reviewSchema), BooksController.updateBookReviewById)
-  .delete(BooksController.deleteReviewById);
+router.get(
+  '/books/:book_id/reviews/:review_id',
+  BooksController.getBookReviewsByReviewId
+);
+router.put(
+  '/books/:book_id/reviews/:review_id',
+  JoiValidation(reviewSchema),
+  BooksController.updateBookReviewById
+);
+router.delete(
+  '/books/:book_id/reviews/:review_id',
+  BooksController.deleteReviewById
+);
 
 export default router;

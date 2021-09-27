@@ -1,4 +1,4 @@
-import Joi = require('Joi');
+import Joi = require('joi');
 import * as express from 'express';
 import { logger } from './loggerHandlers';
 import HttpException from '../exceptions/HttpException';

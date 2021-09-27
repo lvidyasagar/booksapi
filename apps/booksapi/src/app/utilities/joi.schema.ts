@@ -1,7 +1,6 @@
-import Joi = require('Joi');
+import Joi = require('joi');
 
 export const bookSchema = Joi.object({
-  book: {
     book_id: Joi.string().optional(),
     name: Joi.string().required(),
     author: Joi.array().items(Joi.string().required()),
@@ -12,7 +11,6 @@ export const bookSchema = Joi.object({
       name: Joi.string().required(),
       location: Joi.string().required(),
     }).required(),
-  },
 });
 
 export const reviewSchema = Joi.object({

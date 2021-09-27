@@ -5,16 +5,6 @@ import HttpException from '../exceptions/HttpException';
 import { logger } from '../utilities/loggerHandlers';
 
 const createBook = async (req: Request, res: Response, next: NextFunction) => {
-  if (!req.body.book) {
-    next(
-      new HttpException(
-        400,
-        'Request Body data should not be empty',
-        'Bad Request'
-      )
-    );
-  }
-
   const book = new Book(req.body);
   try {
     logger.debug('Create book Api invoked');
@@ -44,7 +34,7 @@ const getBookById = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const bookId = req.params.book_id;
     logger.debug('get book details by book Id Api invoked');
-    const book = await Book.findOne({ 'book.book_id': bookId });
+    const book = await Book.findOne({ book_id: bookId });
     if (!book) {
       next(
         new HttpException(
@@ -70,7 +60,7 @@ const deleteBookById = async (
   try {
     const bookId = req.params.book_id;
     logger.debug('Delete book details by book Id Api invoked');
-    const book = await Book.findOneAndDelete({ 'book.book_id': bookId });
+    const book = await Book.findOneAndDelete({ book_id: bookId });
     if (!book) {
       next(
         new HttpException(
@@ -99,14 +89,14 @@ const updateBookById = async (
   try {
     const bookId = req.params.book_id;
     const updatedBook = {
-      'book.name': req.body.book.name,
-      'book.author': req.body.book.author,
-      'book.price': req.body.book.price,
-      'book.publisher.name': req.body.book.publisher.name,
-      'book.publisher.location': req.body.book.publisher.location,
+      name: req.body.name,
+      author: req.body.author,
+      price: req.body.price,
+      'publisher.name': req.body.publisher.name,
+      'publisher.location': req.body.publisher.location,
     };
     let reviews = [];
-    const reqBodyReviews = req.body.book.reviews || [];
+    const reqBodyReviews = req.body.reviews || [];
     if (Array.isArray(reqBodyReviews) && reqBodyReviews.length > 0) {
       for (let i = 0; i < reqBodyReviews.length; i++) {
         const newReview = new Review({
@@ -119,10 +109,10 @@ const updateBookById = async (
     }
     logger.debug('Update book details Api invoked');
     const book = await Book.findOneAndUpdate(
-      { 'book.book_id': bookId },
+      { book_id: bookId },
       {
         $set: updatedBook,
-        'book.reviews': reviews,
+        reviews: reviews,
       },
       { new: true }
     );
@@ -155,7 +145,7 @@ const getBookReviewsByBookId = async (
   try {
     const bookId = req.params.book_id;
     logger.debug('Get book reviews Api invoked');
-    const book = await Book.findOne({ 'book.book_id': bookId });
+    const book = await Book.findOne({ book_id: bookId });
     if (!book) {
       next(
         new HttpException(
@@ -168,7 +158,7 @@ const getBookReviewsByBookId = async (
       logger.info('Book reviews Api response sent');
       res.json({
         'book-id': bookId,
-        reviews: book.book.reviews,
+        reviews: book.reviews,
       });
     }
   } catch (err) {
@@ -187,8 +177,8 @@ const createBookReviewByBookId = async (
   try {
     logger.debug('Create book review Api invoked');
     const book = await Book.findOneAndUpdate(
-      { 'book.book_id': bookId },
-      { $push: { 'book.reviews': review } }
+      { book_id: bookId },
+      { $push: { reviews: review } }
     );
     if (!book) {
       const message = `Book details not found with book Id ${bookId}.`;
@@ -214,19 +204,21 @@ const getBookReviewsByReviewId = async (
     const bookId = req.params.book_id;
     const reviewId = parseInt(req.params.review_id);
     logger.debug('Get book review with bookId and reviewId Api invoked');
-    const book = await Book.findOne({ 'book.book_id': bookId });
+    const book = await Book.findOne({ book_id: bookId });
     if (!book) {
       const message = `Book details not found with book Id ${bookId}.`;
       next(new HttpException(404, message, 'Not Found'));
-    }else {
-      const review = await book.book.reviews.find(
+    } else {
+      const review = await book.reviews.find(
         (review) => review.review_id === reviewId
       );
       if (book && !review) {
         const message = `Reviews not found with book Id ${bookId} and review Id ${reviewId}.`;
         next(new HttpException(404, message, 'Not Found'));
-      }else{
-        logger.info('Get book review with bookId and reviewId Api response sent');
+      } else {
+        logger.info(
+          'Get book review with bookId and reviewId Api response sent'
+        );
         res.json(review);
       }
     }
@@ -245,11 +237,11 @@ const updateBookReviewById = async (
     const reviewId = req.params.review_id;
     logger.debug('Update book review Api invoked');
     const book = await Book.findOneAndUpdate(
-      { 'book.reviews': { $elemMatch: { review_id: reviewId } } },
+      { reviews: { $elemMatch: { review_id: reviewId } } },
       {
         $set: {
-          'book.reviews.$.reviewer': req.body.reviewer,
-          'book.reviews.$.message': req.body.message,
+          'reviews.$.reviewer': req.body.reviewer,
+          'reviews.$.message': req.body.message,
         },
       }
     );
@@ -283,8 +275,8 @@ const deleteReviewById = async (
     const reviewId = req.params.review_id;
     logger.debug('Delete book review Api invoked');
     const book = await Book.findOneAndUpdate(
-      { 'book.book_id': bookId },
-      { $pull: { 'book.reviews': { review_id: reviewId } } }
+      { book_id: bookId },
+      { $pull: { reviews: { review_id: reviewId } } }
     );
     if (!book) {
       next(
