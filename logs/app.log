@@ -1,16 +1,442 @@
-[2021-09-21T11:02:47.642] [INFO] default - 709cf134-2e66-4ee5-84d4-880f900ed24e: GET /books 
-[2021-09-21T11:02:47.645] [ERROR] default - 709cf134-2e66-4ee5-84d4-880f900ed24e: GET /books throws 400 -System Error : with message - Jwt is expired 
-[2021-09-21T11:03:36.568] [INFO] default - 4f201821-5ddd-4fbf-b838-175f3c430f4c: GET /books 
-[2021-09-21T11:03:39.924] [INFO] default - Get books Api response sent
-[2021-09-21T11:20:13.587] [INFO] default - 1a47db17-e3a8-4be2-94f1-f44b299f8187: GET /books 
-[2021-09-21T11:20:13.590] [ERROR] default - 1a47db17-e3a8-4be2-94f1-f44b299f8187: GET /books throws 400 -Bad Request : with message - Authorization header Bearer token is missing 
-[2021-09-21T14:11:40.653] [INFO] default - Server started at http://localhost:3000
-[2021-09-21T14:11:43.003] [INFO] default - Mongo db is connected
-[2021-09-21T14:12:59.575] [INFO] default - Server started at http://localhost:3000
-[2021-09-21T14:13:02.497] [INFO] default - Mongo db is connected
-[2021-09-21T14:13:19.349] [INFO] default - Server started at http://localhost:3000
-[2021-09-21T14:13:21.610] [INFO] default - Mongo db is connected
-[2021-09-21T14:15:27.045] [INFO] default - c212851b-d3e2-48e2-9322-a7698c421f8f: GET /books 
-[2021-09-21T14:15:27.047] [ERROR] default - c212851b-d3e2-48e2-9322-a7698c421f8f: GET /books throws 400 -System Error : with message - Jwt is expired 
-[2021-09-21T14:16:05.866] [INFO] default - 1306f784-9f54-4a1d-b5f9-f0d6a7723601: GET /books 
-[2021-09-21T14:16:07.238] [INFO] default - Get books Api response sent
+[2021-09-27T12:57:03.576] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T12:57:06.404] [INFO] default - Mongo db is connected
+[2021-09-27T12:57:57.449] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T12:58:00.577] [INFO] default - Mongo db is connected
+[2021-09-27T13:01:42.282] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:01:52.223] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:01:54.854] [INFO] default - Mongo db is connected
+[2021-09-27T13:02:04.658] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:02:07.363] [INFO] default - Mongo db is connected
+[2021-09-27T13:02:31.862] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:02:34.494] [INFO] default - Mongo db is connected
+[2021-09-27T13:03:00.071] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:03:10.262] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:03:13.098] [INFO] default - Mongo db is connected
+[2021-09-27T13:06:23.320] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:06:26.435] [INFO] default - Mongo db is connected
+[2021-09-27T13:07:00.563] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:07:06.734] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:07:09.663] [INFO] default - Mongo db is connected
+[2021-09-27T13:08:10.441] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:08:13.351] [INFO] default - Mongo db is connected
+[2021-09-27T13:08:21.526] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:08:24.107] [INFO] default - Mongo db is connected
+[2021-09-27T13:08:40.012] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:08:43.045] [INFO] default - Mongo db is connected
+[2021-09-27T13:09:25.054] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:09:27.782] [INFO] default - Mongo db is connected
+[2021-09-27T13:09:48.462] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:09:51.351] [INFO] default - Mongo db is connected
+[2021-09-27T13:10:00.228] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:10:08.086] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:10:11.211] [INFO] default - Mongo db is connected
+[2021-09-27T13:10:34.054] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:10:36.693] [INFO] default - Mongo db is connected
+[2021-09-27T13:10:43.873] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:10:46.627] [INFO] default - Mongo db is connected
+[2021-09-27T13:11:32.492] [INFO] default - 7be976a0-d760-44c6-8566-4c4ad63054a3: GET /books 
+[2021-09-27T13:11:32.503] [ERROR] default - 7be976a0-d760-44c6-8566-4c4ad63054a3: GET /books throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:12:11.232] [INFO] default - c7f2e7ba-a4bd-4c30-9739-31466aa64469: GET /books 
+[2021-09-27T13:12:13.294] [INFO] default - Get books Api response sent
+[2021-09-27T13:15:34.420] [ERROR] default - Something went wrong. Server is not running
+[2021-09-27T13:15:34.425] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:15:34.518] [INFO] default - 76033d8f-ea0b-43df-843b-f70c54f66cc1: GET /api 
+[2021-09-27T13:15:34.521] [ERROR] default - 76033d8f-ea0b-43df-843b-f70c54f66cc1: GET /api throws 404 -Not found : with message - URI path not found 
+[2021-09-27T13:15:35.804] [INFO] default - ba4a3c31-85c3-4bc7-a98d-d9323d76941a: GET /books 
+[2021-09-27T13:15:35.810] [ERROR] default - ba4a3c31-85c3-4bc7-a98d-d9323d76941a: GET /books throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:15:35.826] [INFO] default - cd156dea-4354-40f1-b8cd-4bd98fb56727: POST /books 
+[2021-09-27T13:15:35.828] [ERROR] default - cd156dea-4354-40f1-b8cd-4bd98fb56727: POST /books throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:15:38.002] [INFO] default - Mongo db is connected
+[2021-09-27T13:15:41.039] [INFO] default - d23296d0-126b-4b88-bb74-75e6747a019f: POST /books 
+[2021-09-27T13:15:41.041] [ERROR] default - d23296d0-126b-4b88-bb74-75e6747a019f: POST /books throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:15:45.863] [INFO] default - 82e907be-3020-4c42-8f09-5464d583d049: GET /books 
+[2021-09-27T13:15:45.864] [ERROR] default - 82e907be-3020-4c42-8f09-5464d583d049: GET /books throws 400 -Bad Request : with message - Authorization header Bearer token is missing 
+[2021-09-27T13:15:45.891] [INFO] default - aeb2d454-6406-442d-8ae9-72d566f3df20: GET /books 
+[2021-09-27T13:15:45.893] [ERROR] default - aeb2d454-6406-442d-8ae9-72d566f3df20: GET /books throws 400 -System Error : with message - Authorization Header Type should be Bearer 
+[2021-09-27T13:15:45.914] [INFO] default - f3710025-742a-4ba3-a136-1cb7f9d405bf: GET /books/546 
+[2021-09-27T13:15:45.916] [ERROR] default - f3710025-742a-4ba3-a136-1cb7f9d405bf: GET /books/546 throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:15:50.919] [INFO] default - 29a12568-d872-4a4d-a321-125b6c69b558: PUT /books/546 
+[2021-09-27T13:15:50.921] [ERROR] default - 29a12568-d872-4a4d-a321-125b6c69b558: PUT /books/546 throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:15:55.927] [INFO] default - 921d0309-72a5-4d36-8c92-6b0304434801: DELETE /books/546 
+[2021-09-27T13:15:55.928] [ERROR] default - 921d0309-72a5-4d36-8c92-6b0304434801: DELETE /books/546 throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:16:00.957] [INFO] default - df9b071a-ea21-44f4-bca8-bb86befefbc6: GET /books/546/reviews 
+[2021-09-27T13:16:00.959] [ERROR] default - df9b071a-ea21-44f4-bca8-bb86befefbc6: GET /books/546/reviews throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:16:05.963] [INFO] default - e5565e78-0052-4c3f-b1cb-2ea99eb62602: POST /books/546/reviews 
+[2021-09-27T13:16:05.965] [ERROR] default - e5565e78-0052-4c3f-b1cb-2ea99eb62602: POST /books/546/reviews throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:16:10.977] [INFO] default - 57d5afe4-e6e6-421c-bd73-fc7b9813c676: GET /books/546/reviews/324 
+[2021-09-27T13:16:10.978] [ERROR] default - 57d5afe4-e6e6-421c-bd73-fc7b9813c676: GET /books/546/reviews/324 throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:16:16.032] [INFO] default - 08b343aa-e474-48a9-96f5-da8fa3e4a52d: GET /books/B10002/reviews/324 
+[2021-09-27T13:16:16.034] [ERROR] default - 08b343aa-e474-48a9-96f5-da8fa3e4a52d: GET /books/B10002/reviews/324 throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:16:21.047] [INFO] default - 3d009b63-3982-4b3a-aef2-59fca0c94270: PUT /books/546/reviews/324 
+[2021-09-27T13:16:21.049] [ERROR] default - 3d009b63-3982-4b3a-aef2-59fca0c94270: PUT /books/546/reviews/324 throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:16:26.059] [INFO] default - 2c7df497-e46f-4794-88f3-21605d32c07f: DELETE /books/546/reviews/324 
+[2021-09-27T13:16:26.060] [ERROR] default - 2c7df497-e46f-4794-88f3-21605d32c07f: DELETE /books/546/reviews/324 throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:17:18.027] [ERROR] default - Something went wrong. Server is not running
+[2021-09-27T13:17:18.032] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:17:18.140] [INFO] default - 55b48146-a531-4992-a1e2-c59440d4f96c: GET /api 
+[2021-09-27T13:17:18.144] [ERROR] default - 55b48146-a531-4992-a1e2-c59440d4f96c: GET /api throws 404 -Not found : with message - URI path not found 
+[2021-09-27T13:17:19.817] [INFO] default - da5b6b45-c060-4e3b-8d1f-818524ccc203: GET /books 
+[2021-09-27T13:17:21.937] [INFO] default - Mongo db is connected
+[2021-09-27T13:17:23.567] [INFO] default - Get books Api response sent
+[2021-09-27T13:17:23.593] [INFO] default - 972a0b11-ff78-437a-86cf-0fa68473cee4: POST /books 
+[2021-09-27T13:17:23.605] [ERROR] default - error "name" is required
+[2021-09-27T13:17:23.605] [ERROR] default - 972a0b11-ff78-437a-86cf-0fa68473cee4: POST /books throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T13:17:28.696] [INFO] default - 0f27f7fb-6a01-4bd9-a9c8-6cf23ae9b398: POST /books 
+[2021-09-27T13:17:28.700] [ERROR] default - error "name" is required
+[2021-09-27T13:17:28.700] [ERROR] default - 0f27f7fb-6a01-4bd9-a9c8-6cf23ae9b398: POST /books throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T13:17:33.611] [INFO] default - b31cbf8d-0178-4ce6-943d-690c03aa6b32: GET /books 
+[2021-09-27T13:17:33.611] [ERROR] default - b31cbf8d-0178-4ce6-943d-690c03aa6b32: GET /books throws 400 -Bad Request : with message - Authorization header Bearer token is missing 
+[2021-09-27T13:17:33.626] [INFO] default - aeb462fa-30f4-46f8-bcea-6f92adfa8aae: GET /books 
+[2021-09-27T13:17:33.627] [ERROR] default - aeb462fa-30f4-46f8-bcea-6f92adfa8aae: GET /books throws 400 -System Error : with message - Authorization Header Type should be Bearer 
+[2021-09-27T13:17:33.639] [INFO] default - ccb0a206-d534-422a-af4d-ee0e844cde63: GET /books/546 
+[2021-09-27T13:17:33.980] [ERROR] default - ccb0a206-d534-422a-af4d-ee0e844cde63: GET /books/546 throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T13:17:33.992] [INFO] default - 9249b93e-cf1c-412c-8756-71a07bce556c: PUT /books/546 
+[2021-09-27T13:17:33.995] [ERROR] default - error "name" is required
+[2021-09-27T13:17:33.995] [ERROR] default - 9249b93e-cf1c-412c-8756-71a07bce556c: PUT /books/546 throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T13:17:38.992] [INFO] default - ef55ffa9-a14f-4251-b226-cc81f3a7a316: DELETE /books/546 
+[2021-09-27T13:17:39.307] [ERROR] default - ef55ffa9-a14f-4251-b226-cc81f3a7a316: DELETE /books/546 throws 404 -Not Found : with message - Cannot delete book with book Id 546. Book Id not found. 
+[2021-09-27T13:17:39.318] [INFO] default - 24c5b915-9ba8-4a5d-b6c7-fd79a3941e1d: GET /books/546/reviews 
+[2021-09-27T13:17:39.627] [ERROR] default - 24c5b915-9ba8-4a5d-b6c7-fd79a3941e1d: GET /books/546/reviews throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T13:17:39.639] [INFO] default - d5afe749-8e01-498d-8852-ecd0d54186f0: POST /books/546/reviews 
+[2021-09-27T13:17:40.535] [ERROR] default - d5afe749-8e01-498d-8852-ecd0d54186f0: POST /books/546/reviews throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T13:17:40.547] [INFO] default - 887539e0-16ea-4d05-8c79-f115073a5523: GET /books/546/reviews/324 
+[2021-09-27T13:17:40.841] [ERROR] default - 887539e0-16ea-4d05-8c79-f115073a5523: GET /books/546/reviews/324 throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T13:17:40.852] [INFO] default - 3887fa17-d56c-4857-b18f-4e9fe117e893: GET /books/B10002/reviews/324 
+[2021-09-27T13:17:41.165] [ERROR] default - 3887fa17-d56c-4857-b18f-4e9fe117e893: GET /books/B10002/reviews/324 throws 404 -Not Found : with message - Book details not found with book Id B10002. 
+[2021-09-27T13:17:45.870] [INFO] default - 0d134b95-2298-406a-8ff0-4a560b8829a5: PUT /books/546/reviews/324 
+[2021-09-27T13:17:46.225] [ERROR] default - 0d134b95-2298-406a-8ff0-4a560b8829a5: PUT /books/546/reviews/324 throws 404 -Not Found : with message - Cannot update book review with book Id 546 and review Id 324. Book Id or review Id not found. 
+[2021-09-27T13:17:46.243] [INFO] default - e266fb5d-dca8-42a8-862e-732fe99bf04b: DELETE /books/546/reviews/324 
+[2021-09-27T13:17:46.583] [ERROR] default - e266fb5d-dca8-42a8-862e-732fe99bf04b: DELETE /books/546/reviews/324 throws 404 -Not Found : with message - Cannot delete book review with book Id 546 and review Id 324. Book Id or review Id not found. 
+[2021-09-27T13:20:04.302] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:20:06.964] [INFO] default - Mongo db is connected
+[2021-09-27T13:20:30.555] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:20:33.295] [INFO] default - Mongo db is connected
+[2021-09-27T13:21:46.876] [INFO] default - Successfully created the book
+[2021-09-27T13:21:46.903] [INFO] default - Get books Api response sent
+[2021-09-27T13:21:46.906] [INFO] default - get book details by book Id Api response sent
+[2021-09-27T13:21:46.909] [INFO] default - Book with bookId B10001 deleted Successfully
+[2021-09-27T13:21:46.968] [INFO] default - Book reviews Api response sent
+[2021-09-27T13:21:46.973] [INFO] default - Book review is created for book with bookId B10001
+[2021-09-27T13:21:46.976] [INFO] default - Get book review with bookId and reviewId Api response sent
+[2021-09-27T13:21:46.979] [INFO] default - Updated book reviews for bookId B10001
+[2021-09-27T13:21:46.982] [INFO] default - "Successfully deleted book review with bookId B10001 and reviewId 1 
+[2021-09-27T13:21:49.784] [ERROR] default - Something went wrong. Server is not running
+[2021-09-27T13:21:49.789] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:21:49.880] [INFO] default - 9108c84a-309f-427e-a43f-d4151fe31740: GET /api 
+[2021-09-27T13:21:49.883] [ERROR] default - 9108c84a-309f-427e-a43f-d4151fe31740: GET /api throws 404 -Not found : with message - URI path not found 
+[2021-09-27T13:21:51.283] [INFO] default - ed086e0b-1d06-4bcb-8e71-471c78de610a: GET /books 
+[2021-09-27T13:21:53.487] [INFO] default - Mongo db is connected
+[2021-09-27T13:21:54.998] [INFO] default - Get books Api response sent
+[2021-09-27T13:21:55.034] [INFO] default - 6fd6a802-5a45-48cd-9cef-f18ff8264110: POST /books 
+[2021-09-27T13:21:55.047] [ERROR] default - error "name" is required
+[2021-09-27T13:21:55.047] [ERROR] default - 6fd6a802-5a45-48cd-9cef-f18ff8264110: POST /books throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T13:22:00.135] [INFO] default - 3a66384a-d1b3-4d19-9ef9-1463225943ee: POST /books 
+[2021-09-27T13:22:00.138] [ERROR] default - error "name" is required
+[2021-09-27T13:22:00.138] [ERROR] default - 3a66384a-d1b3-4d19-9ef9-1463225943ee: POST /books throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T13:22:05.070] [INFO] default - e3ecda5f-96e9-47ca-800b-646037a4e7ea: GET /books 
+[2021-09-27T13:22:05.071] [ERROR] default - e3ecda5f-96e9-47ca-800b-646037a4e7ea: GET /books throws 400 -Bad Request : with message - Authorization header Bearer token is missing 
+[2021-09-27T13:22:05.088] [INFO] default - d8983bdd-d0f3-4e46-90e6-5680d740a777: GET /books 
+[2021-09-27T13:22:05.089] [ERROR] default - d8983bdd-d0f3-4e46-90e6-5680d740a777: GET /books throws 400 -System Error : with message - Authorization Header Type should be Bearer 
+[2021-09-27T13:22:05.103] [INFO] default - e20fb528-4b22-4487-bbb6-a06fa047703d: GET /books/546 
+[2021-09-27T13:22:05.356] [ERROR] default - e20fb528-4b22-4487-bbb6-a06fa047703d: GET /books/546 throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T13:22:05.374] [INFO] default - 37f79b51-a10b-4b2d-95a8-20273af315ab: PUT /books/546 
+[2021-09-27T13:22:05.384] [ERROR] default - 37f79b51-a10b-4b2d-95a8-20273af315ab: PUT /books/546 throws 400 -System Error : with message - Cannot read property 'name' of undefined 
+[2021-09-27T13:22:10.383] [INFO] default - c9823feb-a1d5-4c20-a9f6-567be649c274: DELETE /books/546 
+[2021-09-27T13:22:10.678] [ERROR] default - c9823feb-a1d5-4c20-a9f6-567be649c274: DELETE /books/546 throws 404 -Not Found : with message - Cannot delete book with book Id 546. Book Id not found. 
+[2021-09-27T13:22:10.692] [INFO] default - 40ef9ba9-0467-4c9a-9ee3-ecacd8a1b559: GET /books/546/reviews 
+[2021-09-27T13:22:10.998] [ERROR] default - 40ef9ba9-0467-4c9a-9ee3-ecacd8a1b559: GET /books/546/reviews throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T13:22:11.013] [INFO] default - f940b0b0-80d1-4e7a-9737-3030ccabfe72: POST /books/546/reviews 
+[2021-09-27T13:22:12.001] [ERROR] default - f940b0b0-80d1-4e7a-9737-3030ccabfe72: POST /books/546/reviews throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T13:22:12.013] [INFO] default - f3bd7d9c-5cf9-4639-a56a-8a43d38a583a: GET /books/546/reviews/324 
+[2021-09-27T13:22:12.333] [ERROR] default - f3bd7d9c-5cf9-4639-a56a-8a43d38a583a: GET /books/546/reviews/324 throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T13:22:12.350] [INFO] default - d3222f90-403b-446d-abd8-717ad798367e: GET /books/B10002/reviews/324 
+[2021-09-27T13:22:12.683] [ERROR] default - d3222f90-403b-446d-abd8-717ad798367e: GET /books/B10002/reviews/324 throws 404 -Not Found : with message - Book details not found with book Id B10002. 
+[2021-09-27T13:22:17.369] [INFO] default - c4e03f85-035d-4d05-8fcf-55f465fdba8d: PUT /books/546/reviews/324 
+[2021-09-27T13:22:17.749] [ERROR] default - c4e03f85-035d-4d05-8fcf-55f465fdba8d: PUT /books/546/reviews/324 throws 404 -Not Found : with message - Cannot update book review with book Id 546 and review Id 324. Book Id or review Id not found. 
+[2021-09-27T13:22:17.766] [INFO] default - 84c64fa4-2b3b-4684-ac70-f6d40af08112: DELETE /books/546/reviews/324 
+[2021-09-27T13:22:18.059] [ERROR] default - 84c64fa4-2b3b-4684-ac70-f6d40af08112: DELETE /books/546/reviews/324 throws 404 -Not Found : with message - Cannot delete book review with book Id 546 and review Id 324. Book Id or review Id not found. 
+[2021-09-27T13:29:25.202] [INFO] default - 53eea0fb-9b4c-4ba7-88ef-1fdfbb8f2ed0: POST /books 
+[2021-09-27T13:29:26.917] [ERROR] default - 53eea0fb-9b4c-4ba7-88ef-1fdfbb8f2ed0: POST /books throws 400 -Bad Request : with message - Request Body data should not be empty 
+[2021-09-27T13:32:17.023] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:32:19.801] [INFO] default - Mongo db is connected
+[2021-09-27T13:32:45.917] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:32:48.660] [INFO] default - Mongo db is connected
+[2021-09-27T13:32:56.679] [INFO] default - 568f01a0-e1f0-4403-808e-7987c297566f: POST /books 
+[2021-09-27T13:34:38.103] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:34:40.876] [INFO] default - Mongo db is connected
+[2021-09-27T13:34:58.016] [INFO] default - a4b5c4de-e4ba-4fc3-9e79-f2063fd6e7df: POST /books 
+[2021-09-27T13:36:03.677] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:36:06.683] [INFO] default - Mongo db is connected
+[2021-09-27T13:36:10.885] [INFO] default - aa94ec66-f264-4ce7-a4bd-02e04d832e42: POST /books 
+[2021-09-27T13:38:18.446] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:38:21.150] [INFO] default - Mongo db is connected
+[2021-09-27T13:38:48.660] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:38:51.665] [INFO] default - Mongo db is connected
+[2021-09-27T13:39:15.179] [INFO] default - d4cab4f7-46ed-47fa-bb6f-d95964084c45: POST /books 
+[2021-09-27T13:39:17.330] [INFO] default - Successfully created the book
+[2021-09-27T13:39:31.596] [INFO] default - 9c451ed7-e3ac-49bf-b210-34fb3735d560: GET /books 
+[2021-09-27T13:39:31.602] [ERROR] default - 9c451ed7-e3ac-49bf-b210-34fb3735d560: GET /books throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:39:47.502] [INFO] default - f76ed71f-8ad0-478b-aa81-4771f5bc4922: GET /books 
+[2021-09-27T13:39:47.755] [INFO] default - Get books Api response sent
+[2021-09-27T13:42:31.949] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T13:42:34.783] [INFO] default - Mongo db is connected
+[2021-09-27T13:43:16.398] [INFO] default - 7c734604-e73d-4dec-b34c-dc4fd444d8e1: POST /books 
+[2021-09-27T13:43:18.824] [INFO] default - Successfully created the book
+[2021-09-27T13:43:23.609] [INFO] default - ecfade96-6b65-4fca-a9a8-09b0adffcda6: GET /books 
+[2021-09-27T13:43:23.950] [INFO] default - Get books Api response sent
+[2021-09-27T13:45:09.064] [INFO] default - 4031a2d7-0674-4a63-bcf0-866b8be0af3b: POST /books 
+[2021-09-27T13:45:10.031] [ERROR] default - 4031a2d7-0674-4a63-bcf0-866b8be0af3b: POST /books throws 400 -System Error : with message - E11000 duplicate key error collection: booksapi.books index: book.book_id_1 dup key: { book.book_id: null } 
+[2021-09-27T13:46:03.151] [INFO] default - d9714b5c-23c9-4c48-90cf-6a0553948646: POST /books 
+[2021-09-27T13:46:04.064] [INFO] default - Successfully created the book
+[2021-09-27T13:46:28.377] [INFO] default - d8f7e20c-6f60-4989-a6c0-e8afd59c8be0: POST /books 
+[2021-09-27T13:46:29.135] [INFO] default - Successfully created the book
+[2021-09-27T13:47:18.891] [INFO] default - 564bb691-1b83-4eff-8cb0-9dbd5b579d31: POST /books 
+[2021-09-27T13:47:19.775] [INFO] default - Successfully created the book
+[2021-09-27T13:48:18.225] [INFO] default - 13a79f14-a9c7-44f4-8bce-42673bc45703: POST /books 
+[2021-09-27T13:48:19.219] [INFO] default - Successfully created the book
+[2021-09-27T13:49:11.319] [INFO] default - 65f96419-fcb2-411f-ac3d-ed016a4e536b: POST /books 
+[2021-09-27T13:49:12.325] [INFO] default - Successfully created the book
+[2021-09-27T13:49:57.604] [INFO] default - 75c4d3b3-ea9a-4567-a8d3-9294f4c7f3d7: POST /books 
+[2021-09-27T13:49:58.559] [INFO] default - Successfully created the book
+[2021-09-27T13:50:07.130] [INFO] default - cd7e3f74-b533-4b5d-8197-81b416fa20e0: GET /books 
+[2021-09-27T13:50:07.415] [INFO] default - Get books Api response sent
+[2021-09-27T13:51:51.525] [INFO] default - 32ce7cfc-7341-4bd2-aea5-0cafb6e92470: GET /books 
+[2021-09-27T13:51:51.850] [INFO] default - Get books Api response sent
+[2021-09-27T13:53:00.587] [INFO] default - 73c635d1-4bb3-42b1-a826-eecda0d60976: POST /books 
+[2021-09-27T13:53:01.573] [INFO] default - Successfully created the book
+[2021-09-27T13:53:26.858] [INFO] default - ac9614e0-020c-4f07-a2ef-6671f0261bec: GET /books 
+[2021-09-27T13:53:26.863] [ERROR] default - ac9614e0-020c-4f07-a2ef-6671f0261bec: GET /books throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:53:57.201] [INFO] default - 99073e77-7fd8-4c83-96b9-b861584cfae5: GET /books 
+[2021-09-27T13:53:57.514] [INFO] default - Get books Api response sent
+[2021-09-27T13:54:30.759] [INFO] default - 5313ca8a-15e8-4446-be2d-6b5655b7901b: GET /books/B10003 
+[2021-09-27T13:54:30.762] [ERROR] default - 5313ca8a-15e8-4446-be2d-6b5655b7901b: GET /books/B10003 throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:54:36.838] [INFO] default - 475cb057-b8fd-4e9a-8fa6-94450a4c642e: GET /books/B10003 
+[2021-09-27T13:54:37.086] [INFO] default - get book details by book Id Api response sent
+[2021-09-27T13:55:35.201] [INFO] default - 33fab03b-224f-4cea-b375-08265c0d3dd3: POST /books 
+[2021-09-27T13:55:35.204] [ERROR] default - 33fab03b-224f-4cea-b375-08265c0d3dd3: POST /books throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:55:45.551] [INFO] default - 5d37c17c-c57b-4b41-8f76-da341c972c50: POST /books 
+[2021-09-27T13:55:46.461] [INFO] default - Successfully created the book
+[2021-09-27T13:56:15.741] [INFO] default - bbdf90cd-a8f3-4455-9981-0515f0aa08bf: PUT /books/B10006 
+[2021-09-27T13:56:16.658] [INFO] default - Book with bookId B10006 details updated successfully.
+[2021-09-27T13:56:25.937] [INFO] default - 849fadcb-17aa-4fd6-8c29-6e154d611aaf: GET /books 
+[2021-09-27T13:56:26.297] [INFO] default - Get books Api response sent
+[2021-09-27T13:57:03.462] [INFO] default - 584a6c9e-a46e-4f2a-b3c9-d345b44fd91d: DELETE /books/B10010 
+[2021-09-27T13:57:03.756] [INFO] default - Book with bookId B10010 deleted Successfully
+[2021-09-27T13:57:13.364] [INFO] default - b8f351a2-5634-46d5-819f-89725ea7d1ef: GET /books/B10009/reviews 
+[2021-09-27T13:57:13.366] [ERROR] default - b8f351a2-5634-46d5-819f-89725ea7d1ef: GET /books/B10009/reviews throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:57:20.387] [INFO] default - 2da1619e-6afa-4768-9ba2-7c60a9624a51: GET /books/B10009/reviews 
+[2021-09-27T13:57:20.631] [INFO] default - Book reviews Api response sent
+[2021-09-27T13:57:35.383] [INFO] default - c8a95b14-09ee-4b63-b99c-6748dbf8b9d4: POST /books/B10009/reviews 
+[2021-09-27T13:57:35.387] [ERROR] default - c8a95b14-09ee-4b63-b99c-6748dbf8b9d4: POST /books/B10009/reviews throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:57:45.871] [INFO] default - da67ba4e-148d-4008-953e-565d349a9ad7: POST /books/B10009/reviews 
+[2021-09-27T13:57:46.673] [INFO] default - Book review is created for book with bookId B10009
+[2021-09-27T13:57:55.735] [INFO] default - 337e3548-8fbc-4dd3-bfa4-73a706f83634: GET /books 
+[2021-09-27T13:57:56.114] [INFO] default - Get books Api response sent
+[2021-09-27T13:58:16.944] [INFO] default - 1b5023cd-789c-47d0-8374-59670289fef3: GET /books/B10003/reviews/14 
+[2021-09-27T13:58:16.948] [ERROR] default - 1b5023cd-789c-47d0-8374-59670289fef3: GET /books/B10003/reviews/14 throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:58:23.976] [INFO] default - 41e9a5b8-00ad-4c29-8dab-8a9311110250: GET /books/B10003/reviews/14 
+[2021-09-27T13:58:24.392] [ERROR] default - 41e9a5b8-00ad-4c29-8dab-8a9311110250: GET /books/B10003/reviews/14 throws 404 -Not Found : with message - Reviews not found with book Id B10003 and review Id 14. 
+[2021-09-27T13:58:31.706] [INFO] default - 3334f2cc-fbb1-4e78-b277-bf81158a284f: GET /books/B10003/reviews/7 
+[2021-09-27T13:58:32.034] [INFO] default - Get book review with bookId and reviewId Api response sent
+[2021-09-27T13:58:47.555] [INFO] default - ddf472e2-4e39-4e57-a2aa-abc72b901fa6: PUT /books/B10003/reviews/14 
+[2021-09-27T13:58:47.556] [ERROR] default - ddf472e2-4e39-4e57-a2aa-abc72b901fa6: PUT /books/B10003/reviews/14 throws 400 -System Error : with message - Jwt is expired 
+[2021-09-27T13:58:56.834] [INFO] default - d7bb8a0d-177c-47c2-b98b-7ed428faf84d: PUT /books/B10003/reviews/14 
+[2021-09-27T13:58:57.110] [ERROR] default - d7bb8a0d-177c-47c2-b98b-7ed428faf84d: PUT /books/B10003/reviews/14 throws 404 -Not Found : with message - Cannot update book review with book Id B10003 and review Id 14. Book Id or review Id not found. 
+[2021-09-27T13:59:09.922] [INFO] default - e28986a4-3306-44ed-9d72-3809866b77bf: PUT /books/B10003/reviews/7 
+[2021-09-27T13:59:10.173] [INFO] default - Updated book reviews for bookId B10003
+[2021-09-27T14:00:00.726] [INFO] default - 822ba7e9-0e07-464c-8e75-ebaf00f91b80: DELETE /books/B10009/reviews/16 
+[2021-09-27T14:00:00.729] [ERROR] default - 822ba7e9-0e07-464c-8e75-ebaf00f91b80: DELETE /books/B10009/reviews/16 throws 400 -Bad Request : with message - Authorization header Bearer token is missing 
+[2021-09-27T14:00:12.485] [INFO] default - 2595ca86-1962-4e20-9cf2-c77985159a28: DELETE /books/B10009/reviews/16 
+[2021-09-27T14:00:12.839] [INFO] default - "Successfully deleted book review with bookId B10009 and reviewId 16 
+[2021-09-27T14:00:47.587] [INFO] default - cab2787e-c748-44c1-9d08-4e1920bc5d95: GET /books 
+[2021-09-27T14:00:47.832] [INFO] default - Get books Api response sent
+[2021-09-27T14:00:47.910] [INFO] default - e30f64b9-d03b-4bde-9bd6-135694716711: POST /books 
+[2021-09-27T14:00:48.791] [INFO] default - Successfully created the book
+[2021-09-27T14:00:48.851] [INFO] default - 3e5854cd-b732-4f27-b532-72ac39700db2: GET /books/B10003 
+[2021-09-27T14:00:49.150] [INFO] default - get book details by book Id Api response sent
+[2021-09-27T14:00:49.213] [INFO] default - fe175287-954a-4032-ad09-0aeceb92aa66: PUT /books/B10006 
+[2021-09-27T14:00:49.976] [INFO] default - Book with bookId B10006 details updated successfully.
+[2021-09-27T14:00:50.060] [INFO] default - 6575073f-8cb8-4528-b061-99baaef73baf: DELETE /books/B10010 
+[2021-09-27T14:00:50.421] [ERROR] default - 6575073f-8cb8-4528-b061-99baaef73baf: DELETE /books/B10010 throws 404 -Not Found : with message - Cannot delete book with book Id B10010. Book Id not found. 
+[2021-09-27T14:00:50.489] [INFO] default - 5a556cbd-daae-4436-91d8-60a4058e8efe: GET /books/B10009/reviews 
+[2021-09-27T14:00:50.796] [INFO] default - Book reviews Api response sent
+[2021-09-27T14:00:50.844] [INFO] default - ba808aa3-caf7-474a-a2b5-815c87589ed3: POST /books/B10009/reviews 
+[2021-09-27T14:00:51.822] [INFO] default - Book review is created for book with bookId B10009
+[2021-09-27T14:00:51.901] [INFO] default - 816ad25f-8e55-4d89-9543-90c3bd1c04c8: GET /books/B10003/reviews/7 
+[2021-09-27T14:00:52.239] [INFO] default - Get book review with bookId and reviewId Api response sent
+[2021-09-27T14:00:52.311] [INFO] default - 08bdfc6e-75e7-44c6-9c47-9c9c94efa414: PUT /books/B10003/reviews/7 
+[2021-09-27T14:00:52.624] [INFO] default - Updated book reviews for bookId B10003
+[2021-09-27T14:00:52.679] [INFO] default - a25f4984-9bcf-4d4c-b66e-f4c91369f169: DELETE /books/B10009/reviews/16 
+[2021-09-27T14:00:53.035] [INFO] default - "Successfully deleted book review with bookId B10009 and reviewId 16 
+[2021-09-27T14:02:48.473] [INFO] default - Successfully created the book
+[2021-09-27T14:02:48.495] [INFO] default - Get books Api response sent
+[2021-09-27T14:02:48.501] [INFO] default - get book details by book Id Api response sent
+[2021-09-27T14:02:48.503] [INFO] default - Book with bookId B10001 deleted Successfully
+[2021-09-27T14:02:48.506] [INFO] default - Book with bookId B10001 details updated successfully.
+[2021-09-27T14:02:48.508] [INFO] default - Book reviews Api response sent
+[2021-09-27T14:02:48.510] [INFO] default - Book review is created for book with bookId B10001
+[2021-09-27T14:02:48.513] [INFO] default - Get book review with bookId and reviewId Api response sent
+[2021-09-27T14:02:48.516] [INFO] default - Updated book reviews for bookId B10001
+[2021-09-27T14:02:48.518] [INFO] default - "Successfully deleted book review with bookId B10001 and reviewId 1 
+[2021-09-27T14:02:52.872] [ERROR] default - Something went wrong. Server is not running
+[2021-09-27T14:02:52.874] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T14:02:52.931] [INFO] default - 137ced7b-0ab0-4180-a780-7f01c277b084: GET /api 
+[2021-09-27T14:02:52.934] [ERROR] default - 137ced7b-0ab0-4180-a780-7f01c277b084: GET /api throws 404 -Not found : with message - URI path not found 
+[2021-09-27T14:02:54.502] [INFO] default - 555bc5a5-08f7-417b-8b25-6f704024824b: GET /books 
+[2021-09-27T14:02:57.049] [INFO] default - Mongo db is connected
+[2021-09-27T14:02:58.534] [INFO] default - Get books Api response sent
+[2021-09-27T14:02:58.557] [INFO] default - 23c92de6-b5e1-4e36-abc1-933edff8ee87: POST /books 
+[2021-09-27T14:02:58.569] [ERROR] default - error "name" is required
+[2021-09-27T14:02:58.569] [ERROR] default - 23c92de6-b5e1-4e36-abc1-933edff8ee87: POST /books throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T14:03:03.634] [INFO] default - a84c185f-973b-4d11-bc0d-3e6612278aea: POST /books 
+[2021-09-27T14:03:03.637] [ERROR] default - error "name" is required
+[2021-09-27T14:03:03.637] [ERROR] default - a84c185f-973b-4d11-bc0d-3e6612278aea: POST /books throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T14:03:08.588] [INFO] default - ac8d0041-7c97-4706-8213-23c83cdea590: GET /books 
+[2021-09-27T14:03:08.589] [ERROR] default - ac8d0041-7c97-4706-8213-23c83cdea590: GET /books throws 400 -Bad Request : with message - Authorization header Bearer token is missing 
+[2021-09-27T14:03:08.606] [INFO] default - cd2e70a8-cb40-4667-9340-46724e94183c: GET /books 
+[2021-09-27T14:03:08.607] [ERROR] default - cd2e70a8-cb40-4667-9340-46724e94183c: GET /books throws 400 -System Error : with message - Authorization Header Type should be Bearer 
+[2021-09-27T14:03:08.620] [INFO] default - b5ee5a7e-2aff-4d3a-bb79-28350a1d050d: GET /books/546 
+[2021-09-27T14:03:08.936] [ERROR] default - b5ee5a7e-2aff-4d3a-bb79-28350a1d050d: GET /books/546 throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:03:08.951] [INFO] default - 0b9a016c-f193-4423-9716-8e46f3049902: PUT /books/546 
+[2021-09-27T14:03:09.201] [ERROR] default - 0b9a016c-f193-4423-9716-8e46f3049902: PUT /books/546 throws 404 -Not Found : with message - Cannot update book with book Id 546. Book Id not found. 
+[2021-09-27T14:03:09.214] [INFO] default - df1efafb-19a0-41ac-8884-5860ec609460: DELETE /books/546 
+[2021-09-27T14:03:09.532] [ERROR] default - df1efafb-19a0-41ac-8884-5860ec609460: DELETE /books/546 throws 404 -Not Found : with message - Cannot delete book with book Id 546. Book Id not found. 
+[2021-09-27T14:03:09.545] [INFO] default - 07b978fd-d9df-4deb-b374-70d76399442f: GET /books/546/reviews 
+[2021-09-27T14:03:09.844] [ERROR] default - 07b978fd-d9df-4deb-b374-70d76399442f: GET /books/546/reviews throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:03:09.860] [INFO] default - 98cc7618-e277-440a-a5ad-1c2188d542f6: POST /books/546/reviews 
+[2021-09-27T14:03:10.759] [ERROR] default - 98cc7618-e277-440a-a5ad-1c2188d542f6: POST /books/546/reviews throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:03:10.773] [INFO] default - 661ec471-6df8-4685-9ba8-de383a1766c1: GET /books/546/reviews/324 
+[2021-09-27T14:03:11.027] [ERROR] default - 661ec471-6df8-4685-9ba8-de383a1766c1: GET /books/546/reviews/324 throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:03:11.044] [INFO] default - 3e15ecf3-eb03-4aac-97e6-bbc8dc7f8ebe: GET /books/B10002/reviews/324 
+[2021-09-27T14:03:11.385] [ERROR] default - 3e15ecf3-eb03-4aac-97e6-bbc8dc7f8ebe: GET /books/B10002/reviews/324 throws 404 -Not Found : with message - Reviews not found with book Id B10002 and review Id 324. 
+[2021-09-27T14:03:11.399] [INFO] default - 866a8e33-bb81-4b3c-bade-27cbf0cab557: PUT /books/546/reviews/324 
+[2021-09-27T14:03:11.687] [ERROR] default - 866a8e33-bb81-4b3c-bade-27cbf0cab557: PUT /books/546/reviews/324 throws 404 -Not Found : with message - Cannot update book review with book Id 546 and review Id 324. Book Id or review Id not found. 
+[2021-09-27T14:03:11.702] [INFO] default - 487cd421-3efc-4def-84f0-bcf8e8df5202: DELETE /books/546/reviews/324 
+[2021-09-27T14:03:12.038] [ERROR] default - 487cd421-3efc-4def-84f0-bcf8e8df5202: DELETE /books/546/reviews/324 throws 404 -Not Found : with message - Cannot delete book review with book Id 546 and review Id 324. Book Id or review Id not found. 
+[2021-09-27T14:05:12.598] [INFO] default - Successfully created the book
+[2021-09-27T14:05:12.629] [INFO] default - Get books Api response sent
+[2021-09-27T14:05:12.631] [INFO] default - get book details by book Id Api response sent
+[2021-09-27T14:05:12.633] [INFO] default - Book with bookId B10001 deleted Successfully
+[2021-09-27T14:05:12.636] [INFO] default - Book with bookId B10001 details updated successfully.
+[2021-09-27T14:05:12.639] [INFO] default - Book reviews Api response sent
+[2021-09-27T14:05:12.643] [INFO] default - Book review is created for book with bookId B10001
+[2021-09-27T14:05:12.647] [INFO] default - Get book review with bookId and reviewId Api response sent
+[2021-09-27T14:05:12.651] [INFO] default - Updated book reviews for bookId B10001
+[2021-09-27T14:05:12.654] [INFO] default - "Successfully deleted book review with bookId B10001 and reviewId 1 
+[2021-09-27T14:05:24.206] [ERROR] default - Something went wrong. Server is not running
+[2021-09-27T14:05:24.210] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T14:05:24.316] [INFO] default - 27d0af91-6eca-43d5-a3c4-6da5332a4b79: GET /api 
+[2021-09-27T14:05:24.319] [ERROR] default - 27d0af91-6eca-43d5-a3c4-6da5332a4b79: GET /api throws 404 -Not found : with message - URI path not found 
+[2021-09-27T14:05:25.642] [INFO] default - 08be97a6-6a24-4d0a-85f7-0dae453e587a: GET /books 
+[2021-09-27T14:05:28.013] [INFO] default - Mongo db is connected
+[2021-09-27T14:05:29.457] [INFO] default - Get books Api response sent
+[2021-09-27T14:05:29.484] [INFO] default - 987d2395-fcfd-435e-a12d-b8f092f01c59: POST /books 
+[2021-09-27T14:05:29.495] [ERROR] default - error "name" is required
+[2021-09-27T14:05:29.495] [ERROR] default - 987d2395-fcfd-435e-a12d-b8f092f01c59: POST /books throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T14:05:34.567] [INFO] default - 9d056e66-860f-4235-ada7-095d6412705e: POST /books 
+[2021-09-27T14:05:34.570] [ERROR] default - error "name" is required
+[2021-09-27T14:05:34.571] [ERROR] default - 9d056e66-860f-4235-ada7-095d6412705e: POST /books throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T14:05:34.583] [INFO] default - 5893b605-e352-44fa-b438-665c4c1d7bd8: GET /books 
+[2021-09-27T14:05:34.584] [ERROR] default - 5893b605-e352-44fa-b438-665c4c1d7bd8: GET /books throws 400 -Bad Request : with message - Authorization header Bearer token is missing 
+[2021-09-27T14:05:34.601] [INFO] default - 90ff7a35-0aae-4876-9354-1cac99327dec: GET /books 
+[2021-09-27T14:05:34.602] [ERROR] default - 90ff7a35-0aae-4876-9354-1cac99327dec: GET /books throws 400 -System Error : with message - Authorization Header Type should be Bearer 
+[2021-09-27T14:05:34.619] [INFO] default - af747359-08d8-4588-b174-05e63fdd4456: GET /books/546 
+[2021-09-27T14:05:34.852] [ERROR] default - af747359-08d8-4588-b174-05e63fdd4456: GET /books/546 throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:05:34.867] [INFO] default - d6577ea7-71b2-48d5-802b-b7be157e77f1: PUT /books/546 
+[2021-09-27T14:05:35.240] [ERROR] default - d6577ea7-71b2-48d5-802b-b7be157e77f1: PUT /books/546 throws 404 -Not Found : with message - Cannot update book with book Id 546. Book Id not found. 
+[2021-09-27T14:05:35.254] [INFO] default - 42bc46d2-3193-4bb4-b99d-dde2a78d6577: DELETE /books/546 
+[2021-09-27T14:05:35.492] [ERROR] default - 42bc46d2-3193-4bb4-b99d-dde2a78d6577: DELETE /books/546 throws 404 -Not Found : with message - Cannot delete book with book Id 546. Book Id not found. 
+[2021-09-27T14:05:35.505] [INFO] default - c6369c07-bce7-4356-ab6c-231e196628fe: GET /books/546/reviews 
+[2021-09-27T14:05:35.771] [ERROR] default - c6369c07-bce7-4356-ab6c-231e196628fe: GET /books/546/reviews throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:05:35.786] [INFO] default - fa55fb37-4141-428b-8026-bda635950c7f: POST /books/546/reviews 
+[2021-09-27T14:05:36.710] [ERROR] default - fa55fb37-4141-428b-8026-bda635950c7f: POST /books/546/reviews throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:05:36.769] [INFO] default - 464700cf-091a-4450-bbd7-62be6b1908a4: GET /books/546/reviews/324 
+[2021-09-27T14:05:36.997] [ERROR] default - 464700cf-091a-4450-bbd7-62be6b1908a4: GET /books/546/reviews/324 throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:05:37.013] [INFO] default - 9207e78d-1ffb-44c9-8a8b-fa1042d0c944: GET /books/B10002/reviews/324 
+[2021-09-27T14:05:37.316] [ERROR] default - 9207e78d-1ffb-44c9-8a8b-fa1042d0c944: GET /books/B10002/reviews/324 throws 404 -Not Found : with message - Reviews not found with book Id B10002 and review Id 324. 
+[2021-09-27T14:05:37.367] [INFO] default - 094273d9-2e74-40eb-a17b-66e520073cfc: PUT /books/546/reviews/324 
+[2021-09-27T14:05:37.604] [ERROR] default - 094273d9-2e74-40eb-a17b-66e520073cfc: PUT /books/546/reviews/324 throws 404 -Not Found : with message - Cannot update book review with book Id 546 and review Id 324. Book Id or review Id not found. 
+[2021-09-27T14:05:37.618] [INFO] default - 679e5123-dd8b-4370-a874-68a051b93cda: DELETE /books/546/reviews/324 
+[2021-09-27T14:05:37.853] [ERROR] default - 679e5123-dd8b-4370-a874-68a051b93cda: DELETE /books/546/reviews/324 throws 404 -Not Found : with message - Cannot delete book review with book Id 546 and review Id 324. Book Id or review Id not found. 
+[2021-09-27T14:06:48.240] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T14:06:50.964] [INFO] default - Mongo db is connected
+[2021-09-27T14:08:18.497] [INFO] default - Successfully created the book
+[2021-09-27T14:08:18.524] [INFO] default - Get books Api response sent
+[2021-09-27T14:08:18.526] [INFO] default - get book details by book Id Api response sent
+[2021-09-27T14:08:18.529] [INFO] default - Book with bookId B10001 deleted Successfully
+[2021-09-27T14:08:18.532] [INFO] default - Book with bookId B10001 details updated successfully.
+[2021-09-27T14:08:18.535] [INFO] default - Book reviews Api response sent
+[2021-09-27T14:08:18.538] [INFO] default - Book review is created for book with bookId B10001
+[2021-09-27T14:08:18.541] [INFO] default - Get book review with bookId and reviewId Api response sent
+[2021-09-27T14:08:18.543] [INFO] default - Updated book reviews for bookId B10001
+[2021-09-27T14:08:18.545] [INFO] default - "Successfully deleted book review with bookId B10001 and reviewId 1 
+[2021-09-27T14:08:22.886] [ERROR] default - Something went wrong. Server is not running
+[2021-09-27T14:08:22.892] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T14:08:23.002] [INFO] default - f6902c40-4b96-451d-9cd0-71819375df9d: GET /api 
+[2021-09-27T14:08:23.006] [ERROR] default - f6902c40-4b96-451d-9cd0-71819375df9d: GET /api throws 404 -Not found : with message - URI path not found 
+[2021-09-27T14:08:24.523] [INFO] default - c0113d0f-2f28-4518-90cd-56310eb3538c: GET /books 
+[2021-09-27T14:08:26.683] [INFO] default - Mongo db is connected
+[2021-09-27T14:08:28.180] [INFO] default - Get books Api response sent
+[2021-09-27T14:08:28.199] [INFO] default - 095552ba-3d2a-4143-8776-6928880e9295: POST /books 
+[2021-09-27T14:08:28.207] [ERROR] default - error "name" is required
+[2021-09-27T14:08:28.208] [ERROR] default - 095552ba-3d2a-4143-8776-6928880e9295: POST /books throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T14:08:28.269] [INFO] default - ca0ee539-d90e-43b7-a6b1-7bb217b66c9f: POST /books 
+[2021-09-27T14:08:28.271] [ERROR] default - error "name" is required
+[2021-09-27T14:08:28.271] [ERROR] default - ca0ee539-d90e-43b7-a6b1-7bb217b66c9f: POST /books throws 400 -Bad Request : with message - "name" is required 
+[2021-09-27T14:08:28.282] [INFO] default - c35f4963-4eb9-4956-8982-f81727f567b4: GET /books 
+[2021-09-27T14:08:28.283] [ERROR] default - c35f4963-4eb9-4956-8982-f81727f567b4: GET /books throws 400 -Bad Request : with message - Authorization header Bearer token is missing 
+[2021-09-27T14:08:28.302] [INFO] default - 0b32bc46-2bd2-41ce-aeb9-d2b5422c3d7b: GET /books 
+[2021-09-27T14:08:28.302] [ERROR] default - 0b32bc46-2bd2-41ce-aeb9-d2b5422c3d7b: GET /books throws 400 -System Error : with message - Authorization Header Type should be Bearer 
+[2021-09-27T14:08:28.313] [INFO] default - 87ae85b3-898c-4031-a01a-75e30a264d89: GET /books/546 
+[2021-09-27T14:08:28.657] [ERROR] default - 87ae85b3-898c-4031-a01a-75e30a264d89: GET /books/546 throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:08:28.671] [INFO] default - 54a0ea90-205f-428d-99bd-45a921e22f5c: PUT /books/546 
+[2021-09-27T14:08:28.947] [ERROR] default - 54a0ea90-205f-428d-99bd-45a921e22f5c: PUT /books/546 throws 404 -Not Found : with message - Cannot update book with book Id 546. Book Id not found. 
+[2021-09-27T14:08:28.956] [INFO] default - 8cf5464a-2b59-4172-906d-a20ced442b45: DELETE /books/546 
+[2021-09-27T14:08:29.218] [ERROR] default - 8cf5464a-2b59-4172-906d-a20ced442b45: DELETE /books/546 throws 404 -Not Found : with message - Cannot delete book with book Id 546. Book Id not found. 
+[2021-09-27T14:08:29.227] [INFO] default - 4b1cfd51-b197-4b9c-bc31-76ccb9a8f6b9: GET /books/546/reviews 
+[2021-09-27T14:08:29.596] [ERROR] default - 4b1cfd51-b197-4b9c-bc31-76ccb9a8f6b9: GET /books/546/reviews throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:08:29.606] [INFO] default - 927884fc-7956-43ac-b8bb-d6b95f00d9a2: POST /books/546/reviews 
+[2021-09-27T14:08:30.658] [ERROR] default - 927884fc-7956-43ac-b8bb-d6b95f00d9a2: POST /books/546/reviews throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:08:30.667] [INFO] default - 34a824ee-0033-4d4d-b9f3-6ddb6104e2da: GET /books/546/reviews/324 
+[2021-09-27T14:08:30.976] [ERROR] default - 34a824ee-0033-4d4d-b9f3-6ddb6104e2da: GET /books/546/reviews/324 throws 404 -Not Found : with message - Book details not found with book Id 546. 
+[2021-09-27T14:08:30.984] [INFO] default - ab1e7133-5182-4c33-a896-b4937e6ba7f0: GET /books/B10002/reviews/324 
+[2021-09-27T14:08:31.274] [ERROR] default - ab1e7133-5182-4c33-a896-b4937e6ba7f0: GET /books/B10002/reviews/324 throws 404 -Not Found : with message - Reviews not found with book Id B10002 and review Id 324. 
+[2021-09-27T14:08:31.284] [INFO] default - b9206b71-4551-4caa-9ec8-764aef8bec7a: PUT /books/546/reviews/324 
+[2021-09-27T14:08:31.523] [ERROR] default - b9206b71-4551-4caa-9ec8-764aef8bec7a: PUT /books/546/reviews/324 throws 404 -Not Found : with message - Cannot update book review with book Id 546 and review Id 324. Book Id or review Id not found. 
+[2021-09-27T14:08:31.541] [INFO] default - d6144113-2205-4c5c-9aa1-e119530e004b: DELETE /books/546/reviews/324 
+[2021-09-27T14:08:31.898] [ERROR] default - d6144113-2205-4c5c-9aa1-e119530e004b: DELETE /books/546/reviews/324 throws 404 -Not Found : with message - Cannot delete book review with book Id 546 and review Id 324. Book Id or review Id not found. 
+[2021-09-27T14:10:31.844] [INFO] default - 946594b0-6b5f-4d12-bfcc-c61a9196d054: GET /books 
+[2021-09-27T14:10:33.800] [INFO] default - Get books Api response sent
+[2021-09-27T15:41:14.875] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T15:41:17.091] [INFO] default - Mongo db is connected
+[2021-09-27T15:41:36.846] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T15:41:39.832] [INFO] default - Mongo db is connected
+[2021-09-27T15:41:58.315] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T15:42:01.008] [INFO] default - Mongo db is connected
+[2021-09-27T15:42:10.735] [INFO] default - bd82e533-f652-4035-b8bf-59cab15a83a4: GET /books 
+[2021-09-27T15:42:11.015] [INFO] default - Get books Api response sent
+[2021-09-27T15:42:23.371] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T15:42:23.970] [INFO] default - 596ed262-91b3-4d34-8444-76ef222df3b3: GET /books 
+[2021-09-27T15:42:23.972] [ERROR] default - 596ed262-91b3-4d34-8444-76ef222df3b3: GET /books throws 400 -Bad Request : with message - Authorization header Bearer token is missing 
+[2021-09-27T15:42:25.700] [INFO] default - Mongo db is connected
+[2021-09-27T15:42:34.117] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T15:42:36.217] [INFO] default - Mongo db is connected
+[2021-09-27T15:58:06.161] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T15:58:08.391] [INFO] default - Mongo db is connected
+[2021-09-27T15:58:19.460] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T15:58:21.622] [INFO] default - Mongo db is connected
+[2021-09-27T16:15:07.458] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T16:15:09.599] [INFO] default - Mongo db is connected
+[2021-09-27T16:47:04.415] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T16:47:07.288] [INFO] default - Mongo db is connected
+[2021-09-27T17:21:37.615] [ERROR] default - undefined: GET /authorization-code/callback throws 500 -System Error : with message - did not find expected authorization request details in session, req.session["oidc:https://dev-68266919.okta.com/oauth2/default"] is undefined 
+[2021-09-27T17:32:25.270] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T17:32:27.519] [INFO] default - Mongo db is connected
+[2021-09-27T17:33:42.694] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T17:33:44.821] [INFO] default - Mongo db is connected
+[2021-09-27T17:33:59.943] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T17:34:02.192] [INFO] default - Mongo db is connected
+[2021-09-27T17:34:10.136] [INFO] default - b789b997-e9a9-431b-a9b6-cd2e61215752: GET /books 
+[2021-09-27T17:34:10.417] [INFO] default - Get books Api response sent
+[2021-09-27T17:34:21.384] [INFO] default - Server started at http://localhost:3000
+[2021-09-27T17:34:24.405] [INFO] default - Mongo db is connected
