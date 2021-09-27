@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "nx": "nx",
-    "start": "node dist/apps/api/main.js",
+    "start": "node dist/apps/booksapi/main.js",
     "build": "nx build",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
